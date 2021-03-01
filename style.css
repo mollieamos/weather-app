@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Mono", monospace;
+  background-image: url("./img/pexels-ben-mack-5707732.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: #bed4e7;
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid #34474f;
+  color: #2f4047;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+header input:focus {
+  background-color: #ffffffa4;
+}
+
+::placeholder {
+  color: #34474f9f;
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.location .date {
+  color: #ffffff;
+  font-size: 16px;
+  text-shadow: 0px 1px #00000081;
+}
+
+.current .temp {
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 500px;
+  margin: 30px 0;
+  text-shadow: 2px 8px #000000a6;
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px #00000081;
+}
+
+.current .hi-low {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 3px #00000081;
+}
